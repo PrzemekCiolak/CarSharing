@@ -61,6 +61,7 @@ a {
 .menu-main li:hover {
     background: #FFFFFF33 0% 0% no-repeat padding-box;
     opacity: 1;
+    transition: 600ms;
 }
 
 .banner {
@@ -88,6 +89,7 @@ h1 {
 }
 
 .header-button-left {
+    box-sizing: border-box;
     margin-right: 25px;
     padding: 22px 55px;
     background: #FF0000 0% 0% no-repeat padding-box;
@@ -100,7 +102,20 @@ h1 {
     text-transform: uppercase;
 }
 
+.header-button-left:hover {
+    box-shadow: 180px 3px 6px #FFFFFF inset;
+    color: #000000;
+    transition: 150ms;
+}
+
+.header-button-left:active {
+    box-shadow: 0px 3px 6px #000000 inset;
+    color: #FFFFFF;
+    transition: 150ms;
+}
+
 .header-button-right {
+    box-sizing: border-box;
     padding: 22px 55px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: none;
@@ -110,6 +125,18 @@ h1 {
     letter-spacing: 0px;
     color: #FF0000;
     text-transform: uppercase;
+}
+
+.header-button-right:hover {
+    box-shadow: 180px 3px 6px #FF0000 inset;
+    color: #FFFFFF;
+    transition: 150ms;
+}
+
+.header-button-right:active {
+    box-shadow: 0px 3px 6px #000000 inset;
+    color: #FF0000;
+    transition: 150ms;
 }
 
 .header-arrow {
